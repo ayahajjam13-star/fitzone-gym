@@ -1,0 +1,138 @@
+/* src/components/About.css */
+.about {
+  background: #111111;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.about-experience {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+  background: #FFD700;
+  color: #000000;
+  padding: 25px 35px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3);
+}
+
+.about-experience span {
+  font-size: 3rem;
+  font-weight: 800;
+  display: block;
+}
+
+.about-experience p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-left p {
+  margin: 0;
+}
+
+.about-content p {
+  color: #BDBDBD;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.about-features {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-feature span {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-feature h4 {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.about-feature p {
+  font-size: 0.9rem;
+  color: #BDBDBD;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image img {
+    height: 350px;
+  }
+
+  .about-experience {
+    right: 0;
+    padding: 20px 30px;
+  }
+
+  .about-experience span {
+    font-size: 2.2rem;
+  }
+
+  .text-left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image img {
+    height: 280px;
+  }
+
+  .about-experience {
+    padding: 15px 25px;
+  }
+
+  .about-experience span {
+    font-size: 1.8rem;
+  }
+
+  .about-feature {
+    flex-direction: column;
+    text-align: center;
+  }
+}

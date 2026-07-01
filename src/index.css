@@ -1,0 +1,131 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.section-header h2 span {
+  color: #FFD700;
+}
+
+.section-header p {
+  color: #BDBDBD;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #FFD700;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary:hover {
+  background: #e6c200;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 36px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: 2px solid #FFD700;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-secondary:hover {
+  background: #FFD700;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.btn-small {
+  padding: 10px 24px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}
