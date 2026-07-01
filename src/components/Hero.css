@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  min-height: 600px;
 }
 
 .hero-image {
@@ -36,6 +37,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
+  padding: 0 20px;
 }
 
 .hero-content {
@@ -70,7 +72,7 @@
 }
 
 .hero-content h1 {
-  font-size: 4.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 16px;
@@ -81,7 +83,7 @@
 }
 
 .hero-content p {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.2rem);
   color: #BDBDBD;
   max-width: 520px;
   margin-bottom: 30px;
@@ -98,54 +100,56 @@
 
 .hero-stats {
   display: flex;
-  gap: 50px;
+  gap: clamp(20px, 4vw, 50px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 25px;
+  padding-top: clamp(15px, 2vw, 25px);
   margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div {
+  flex: 1;
+  min-width: 60px;
 }
 
 .hero-stats div span {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   font-weight: 800;
   color: #FFD700;
   display: block;
 }
 
 .hero-stats div p {
-  font-size: 0.9rem;
+  font-size: clamp(0.7rem, 0.9vw, 0.9rem);
   color: #BDBDBD;
   margin: 0;
 }
 
 @media (max-width: 1024px) {
-  .hero-content h1 {
-    font-size: 3.5rem;
+  .hero-content {
+    padding-top: 100px;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
     height: 90vh;
+    min-height: 500px;
   }
 
   .hero-content {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
-  .hero-content h1 {
-    font-size: 2.8rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
+  .hero-buttons {
+    gap: 12px;
   }
 
   .hero-stats {
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 15px;
   }
 
-  .hero-stats div span {
-    font-size: 2rem;
+  .hero-stats div {
+    min-width: 50px;
   }
 }
