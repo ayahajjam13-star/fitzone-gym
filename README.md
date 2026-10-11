@@ -1,8 +1,8 @@
 # FitZone Gym 💪
 
-Site vitrine premium pour une salle de sport à Al Hoceima, Maroc. Design moderne, sombre et élégant avec animations.
+Application web React moderne pour une salle de sport premium à Al Hoceima, Maroc.
 
-<img width="1169" height="2122" alt="image" src="https://github.com/user-attachments/assets/77766102-f9b3-44a0-8803-77c4faca3258" />
+<img width="1168" height="2252" alt="image" src="https://github.com/user-attachments/assets/d4096833-3f70-4982-9430-8e9fe88337b8" />
 
 
 ## 🔗 Demo Live
@@ -11,19 +11,19 @@ Site vitrine premium pour une salle de sport à Al Hoceima, Maroc. Design modern
 
 ## 🛠 Technologies
 
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Design
-- Déployé sur Vercel
+- ⚛️ React
+- 🎨 CSS3 / Tailwind CSS
+- ⚡ Vite (ou Create React App)
+- 📱 Responsive Design
+- 🚀 Déployé sur Vercel
 
 ## ✨ Fonctionnalités
 
 - 🏋️ Hero section avec appel à l'action
 - 📊 Statistiques animées (10k+ membres, 50+ coachs, 15+ ans)
 - 💼 Section Services (Musculation, Coaching, Cours Collectifs, Cardio)
-- 👥 Section Coachs avec profils (Sarah, John, Mike)
-- 🖼️ Galerie photos interactive avec zoom
+- 👥 Section Coachs avec profils
+- 🖼️ Galerie photos interactive
 - 💰 Grille tarifaire (Basic $29, Premium $59, VIP $99)
 - ⭐ Témoignages clients (carrousel)
 - 📞 Formulaire de contact
@@ -32,23 +32,36 @@ Site vitrine premium pour une salle de sport à Al Hoceima, Maroc. Design modern
 ## 🎨 Design
 
 - Thème sombre premium avec accents dorés
-- Typographie élégante
-- Animations fluides au scroll
+- Animations fluides
 - Interface moderne et professionnelle
 
 ## 📸 Aperçu
 
-<img width="1168" height="2252" alt="image" src="https://github.com/user-attachments/assets/cbd04205-546b-44e9-8eeb-56bfa7fca229" />
-
+![Screenshot du site](./screenshot.png)
 
 ## 📂 Structure du projet
 
 \`\`\`
 fitzone-gym/
-├── index.html
-├── style.css
-├── script.js
-└── images/
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Coaches.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Pricing.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── vite.config.js
 \`\`\`
 
 ## 🚀 Installation locale
@@ -60,8 +73,20 @@ git clone https://github.com/ayahajjam13-star/fitzone-gym.git
 # Entrer dans le dossier
 cd fitzone-gym
 
-# Ouvrir le site
-# Double-cliquez sur index.html ou utilisez Live Server
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
+
+# Ouvrir http://localhost:5173
+\`\`\`
+
+## 🏗️ Build pour production
+
+\`\`\`bash
+npm run build
+npm run preview
 \`\`\`
 
 ## 📞 Contact
